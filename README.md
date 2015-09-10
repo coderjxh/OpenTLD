@@ -5,6 +5,7 @@ from https://github.com/alantrrs/OpenTLD
 
 	$ git clone git@github.com:kyokyojiang/OpenTLD.git
   	$ git branch origin/windows
+	$ git pull
 
 # Ubuntu
 
@@ -16,3 +17,4 @@ from https://github.com/alantrrs/OpenTLD
 	$ source /etc/profile
 	$ git clone git@github.com:kyokyojiang/OpenTLD.git
 	$ git branch origin/ubuntu
+	$ git pull
