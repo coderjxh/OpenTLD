@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{3BFE6CC1-D9AC-4D5D-99EA-1E220697D86C}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>run_tld</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\gitrepos\kyokyojiang.Opentld\bin\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">run_tld.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">run_tld</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\gitrepos\kyokyojiang.Opentld\bin\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">run_tld.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">run_tld</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:/Opencv/2.4.5/include;F:/Opencv/2.4.5/include/opencv;F:/gitrepos/kyokyojiang.Opentld/src/../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:/Opencv/2.4.5/include;F:/Opencv/2.4.5/include/opencv;F:/gitrepos/kyokyojiang.Opentld/src/../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:/Opencv/2.4.5/include;F:/Opencv/2.4.5/include/opencv;F:/gitrepos/kyokyojiang.Opentld/src/../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;F:\gitrepos\kyokyojiang.Opentld\lib\Debug\tld.lib;F:\gitrepos\kyokyojiang.Opentld\lib\Debug\LKTracker.lib;F:\gitrepos\kyokyojiang.Opentld\lib\Debug\ferNN.lib;F:\gitrepos\kyokyojiang.Opentld\lib\Debug\tld_utils.lib;F:\Opencv\2.4.5\lib\opencv_calib3d245d.lib;F:\Opencv\2.4.5\lib\opencv_contrib245d.lib;F:\Opencv\2.4.5\lib\opencv_core245d.lib;F:\Opencv\2.4.5\lib\opencv_features2d245d.lib;F:\Opencv\2.4.5\lib\opencv_flann245d.lib;F:\Opencv\2.4.5\lib\opencv_gpu245d.lib;F:\Opencv\2.4.5\lib\opencv_highgui245d.lib;F:\Opencv\2.4.5\lib\opencv_imgproc245d.lib;F:\Opencv\2.4.5\lib\opencv_legacy245d.lib;F:\Opencv\2.4.5\lib\opencv_ml245d.lib;F:\Opencv\2.4.5\lib\opencv_nonfree245d.lib;F:\Opencv\2.4.5\lib\opencv_objdetect245d.lib;F:\Opencv\2.4.5\lib\opencv_photo245d.lib;F:\Opencv\2.4.5\lib\opencv_stitching245d.lib;F:\Opencv\2.4.5\lib\opencv_superres245d.lib;F:\Opencv\2.4.5\lib\opencv_ts245d.lib;F:\Opencv\2.4.5\lib\opencv_video245d.lib;F:\Opencv\2.4.5\lib\opencv_videostab245d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>F:/gitrepos/kyokyojiang.Opentld/bin/Debug/run_tld.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/gitrepos/kyokyojiang.Opentld/bin/Debug/run_tld.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:/Opencv/2.4.5/include;F:/Opencv/2.4.5/include/opencv;F:/gitrepos/kyokyojiang.Opentld/src/../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:/Opencv/2.4.5/include;F:/Opencv/2.4.5/include/opencv;F:/gitrepos/kyokyojiang.Opentld/src/../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:/Opencv/2.4.5/include;F:/Opencv/2.4.5/include/opencv;F:/gitrepos/kyokyojiang.Opentld/src/../include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;F:\gitrepos\kyokyojiang.Opentld\lib\Release\tld.lib;F:\gitrepos\kyokyojiang.Opentld\lib\Release\LKTracker.lib;F:\gitrepos\kyokyojiang.Opentld\lib\Release\ferNN.lib;F:\gitrepos\kyokyojiang.Opentld\lib\Release\tld_utils.lib;F:\Opencv\2.4.5\lib\opencv_calib3d245.lib;F:\Opencv\2.4.5\lib\opencv_contrib245.lib;F:\Opencv\2.4.5\lib\opencv_core245.lib;F:\Opencv\2.4.5\lib\opencv_features2d245.lib;F:\Opencv\2.4.5\lib\opencv_flann245.lib;F:\Opencv\2.4.5\lib\opencv_gpu245.lib;F:\Opencv\2.4.5\lib\opencv_highgui245.lib;F:\Opencv\2.4.5\lib\opencv_imgproc245.lib;F:\Opencv\2.4.5\lib\opencv_legacy245.lib;F:\Opencv\2.4.5\lib\opencv_ml245.lib;F:\Opencv\2.4.5\lib\opencv_nonfree245.lib;F:\Opencv\2.4.5\lib\opencv_objdetect245.lib;F:\Opencv\2.4.5\lib\opencv_photo245.lib;F:\Opencv\2.4.5\lib\opencv_stitching245.lib;F:\Opencv\2.4.5\lib\opencv_superres245.lib;F:\Opencv\2.4.5\lib\opencv_ts245.lib;F:\Opencv\2.4.5\lib\opencv_video245.lib;F:\Opencv\2.4.5\lib\opencv_videostab245.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>F:/gitrepos/kyokyojiang.Opentld/bin/Release/run_tld.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/gitrepos/kyokyojiang.Opentld/bin/Release/run_tld.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\src\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule F:/gitrepos/kyokyojiang.Opentld/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"D:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HF:/gitrepos/kyokyojiang.Opentld/src -BF:/gitrepos/kyokyojiang.Opentld/vs2010 --check-stamp-file F:\gitrepos\kyokyojiang.Opentld\vs2010\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:/gitrepos/kyokyojiang.Opentld/src/CMakeLists.txt;F:\gitrepos\kyokyojiang.Opentld\src\CMakeLists.txt;F:\gitrepos\kyokyojiang.Opentld\vs2010\CMakeFiles\2.8.12\CMakeSystem.cmake;F:\gitrepos\kyokyojiang.Opentld\vs2010\CMakeFiles\2.8.12\CMakeCCompiler.cmake;F:\gitrepos\kyokyojiang.Opentld\vs2010\CMakeFiles\2.8.12\CMakeCXXCompiler.cmake;D:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;D:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;D:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;D:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;D:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;F:\gitrepos\kyokyojiang.Opentld\vs2010\CMakeFiles\2.8.12\CMakeRCCompiler.cmake;D:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;D:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;D:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;D:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;F:\Opencv\2.4.5\OpenCVConfig-version.cmake;F:\Opencv\2.4.5\OpenCVConfig.cmake;F:\gitrepos\kyokyojiang.Opentld\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\gitrepos\kyokyojiang.Opentld\vs2010\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule F:/gitrepos/kyokyojiang.Opentld/src/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"D:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -HF:/gitrepos/kyokyojiang.Opentld/src -BF:/gitrepos/kyokyojiang.Opentld/vs2010 --check-stamp-file F:\gitrepos\kyokyojiang.Opentld\vs2010\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:/gitrepos/kyokyojiang.Opentld/src/CMakeLists.txt;F:\gitrepos\kyokyojiang.Opentld\src\CMakeLists.txt;F:\gitrepos\kyokyojiang.Opentld\vs2010\CMakeFiles\2.8.12\CMakeSystem.cmake;F:\gitrepos\kyokyojiang.Opentld\vs2010\CMakeFiles\2.8.12\CMakeCCompiler.cmake;F:\gitrepos\kyokyojiang.Opentld\vs2010\CMakeFiles\2.8.12\CMakeCXXCompiler.cmake;D:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeGenericSystem.cmake;D:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows.cmake;D:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\WindowsPaths.cmake;D:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCInformation.cmake;D:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-C.cmake;D:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;F:\gitrepos\kyokyojiang.Opentld\vs2010\CMakeFiles\2.8.12\CMakeRCCompiler.cmake;D:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeRCInformation.cmake;D:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXInformation.cmake;D:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\Platform\Windows-MSVC.cmake;D:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCommonLanguageInclude.cmake;F:\Opencv\2.4.5\OpenCVConfig-version.cmake;F:\Opencv\2.4.5\OpenCVConfig.cmake;F:\gitrepos\kyokyojiang.Opentld\src\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\gitrepos\kyokyojiang.Opentld\vs2010\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\run_tld.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:/gitrepos/kyokyojiang.Opentld/vs2010/LKTracker.vcxproj">
+      <Project>263D3F94-A832-428A-A951-77D14C7AA8BB</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/gitrepos/kyokyojiang.Opentld/vs2010/ZERO_CHECK.vcxproj">
+      <Project>3989C0BA-A6AA-4800-801B-20CB59288969</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/gitrepos/kyokyojiang.Opentld/vs2010/ferNN.vcxproj">
+      <Project>D1DF68F8-FAFB-4F06-8EE0-9329687304DE</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/gitrepos/kyokyojiang.Opentld/vs2010/tld.vcxproj">
+      <Project>F2065AAB-6761-467E-8F98-A5EA63DD7D50</Project>
+    </ProjectReference>
+    <ProjectReference Include="F:/gitrepos/kyokyojiang.Opentld/vs2010/tld_utils.vcxproj">
+      <Project>F903DFA1-2F74-436B-B3F0-055A4EDA797E</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
